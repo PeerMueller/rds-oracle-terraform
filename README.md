@@ -1,4 +1,4 @@
-## My Project
+## Provision and manage Amazon RDS for Oracle using Terraform
 
 TODO: Fill this README out!
 
