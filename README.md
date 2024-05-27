@@ -1,11 +1,6 @@
-## Provision and manage Amazon RDS for Oracle using Terraform
+## [Provision and manage Amazon RDS for Oracle using Terraform](https://aws.amazon.com/blogs/database/provision-and-manage-amazon-rds-for-oracle-using-terraform/)
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+Please check the above blog post link for steps. 
 
 ## Security
 
