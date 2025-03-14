@@ -9,12 +9,12 @@ variable "db_engine" {
 
 variable "db_engine_version" {
   description = "DB engine version"
-  default     = "19.0.0.0.ru-2022-10.rur-2022-10.r1"
+  default     = "19.0.0.0.ru-2025-01.rur-2025-01.r2"
 }
 
 variable "db_allocated_storage" {
   description = "DB storage"
-  default = "400"
+  default = "150"
 }
 
 variable "db_backup_retention" {
@@ -29,7 +29,7 @@ variable "db_license_model" {
 
 variable "db_instance_class" {
   description = "DB instance size"
-  default     = "db.t3.medium"
+  default     = "db.m5.large"
 }
 
 

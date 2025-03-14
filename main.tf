@@ -1,3 +1,11 @@
+
+resource "aws_db_subnet_group" "rds_oracle_subnet_group" {
+  name       = "rds_oracle"
+  subnet_ids = ["subnet-03e214c494ea62cca", "subnet-01485dd12d7a70d71"]
+
+}
+
+
 resource "aws_db_instance" "rds" {
   identifier                            = var.db_identifier
   engine                                = var.db_engine
@@ -9,7 +17,7 @@ resource "aws_db_instance" "rds" {
   username                              = var.username
   manage_master_user_password           = var.manage_master_user_password 
   character_set_name                    = var.db_character_set_name
-  db_subnet_group_name                  = var.db_subnet_group
+  db_subnet_group_name                  = aws_db_subnet_group.rds_oracle_subnet_group.name
   parameter_group_name                  = var.db_param_group
   option_group_name                     = var.db_option_group
   storage_type                          = var.db_storage_type
